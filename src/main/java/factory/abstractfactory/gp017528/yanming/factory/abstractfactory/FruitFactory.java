@@ -1,8 +1,8 @@
-package factory.abstractfactory.yanming.factory.abstractfactory;
+package factory.abstractfactory.gp017528.yanming.factory.abstractfactory;
 
-import factory.abstractfactory.yanming.factory.vo.IFood;
-import factory.abstractfactory.yanming.factory.vo.Lemon;
-import factory.abstractfactory.yanming.factory.vo.Watermelon;
+import factory.abstractfactory.gp017528.yanming.factory.vo.IFood;
+import factory.abstractfactory.gp017528.yanming.factory.vo.Lemon;
+import factory.abstractfactory.gp017528.yanming.factory.vo.Watermelon;
 
 /**
  * Created by Yan on 2019/3/8.

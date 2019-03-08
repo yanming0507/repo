@@ -1,8 +1,8 @@
-package factory.abstractfactory.yanming.factory.abstractfactory;
+package factory.abstractfactory.gp017528.yanming.factory.abstractfactory;
 
-import factory.abstractfactory.yanming.factory.vo.AcidRice;
-import factory.abstractfactory.yanming.factory.vo.IFood;
-import factory.abstractfactory.yanming.factory.vo.SweetRice;
+import factory.abstractfactory.gp017528.yanming.factory.vo.AcidRice;
+import factory.abstractfactory.gp017528.yanming.factory.vo.IFood;
+import factory.abstractfactory.gp017528.yanming.factory.vo.SweetRice;
 
 /**
  * Created by Yan on 2019/3/8.

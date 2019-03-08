@@ -1,8 +1,8 @@
-package factory.abstractfactory.yanming.factory.simple;
+package factory.abstractfactory.gp017528.yanming.factory.simple;
 
-import factory.abstractfactory.yanming.factory.vo.Fruit;
-import factory.abstractfactory.yanming.factory.vo.IFood;
-import factory.abstractfactory.yanming.factory.vo.Rice;
+import factory.abstractfactory.gp017528.yanming.factory.vo.Fruit;
+import factory.abstractfactory.gp017528.yanming.factory.vo.IFood;
+import factory.abstractfactory.gp017528.yanming.factory.vo.Rice;
 
 /**
  * Created by Yan on 2019/3/8.
@@ -25,7 +25,7 @@ public class SimpleFactoryTest {
         SimpleFactory factory = new SimpleFactory();
         *//*
         正常
-        IFood food = factory.createByType("factory.abstractfactory.yanming.factory.vo.Fruit");
+        IFood food = factory.createByType("Fruit");
         food.create();*//*
         //完整类名称没写正确
         IFood food1 = factory.createByType("factory.abstractfactory.yanming.factory.vo.Fruits");

@@ -1,9 +1,9 @@
-package factory.abstractfactory.yanming.factory.simple;
+package factory.abstractfactory.gp017528.yanming.factory.simple;
 
-import factory.abstractfactory.yanming.factory.vo.Fruit;
-import factory.abstractfactory.yanming.factory.vo.IFood;
-import factory.abstractfactory.yanming.factory.vo.Rice;
-import factory.abstractfactory.yanming.factory.vo.Vegetables;
+import factory.abstractfactory.gp017528.yanming.factory.vo.Fruit;
+import factory.abstractfactory.gp017528.yanming.factory.vo.IFood;
+import factory.abstractfactory.gp017528.yanming.factory.vo.Rice;
+import factory.abstractfactory.gp017528.yanming.factory.vo.Vegetables;
 
 /**
  * Created by Yan on 2019/3/8.

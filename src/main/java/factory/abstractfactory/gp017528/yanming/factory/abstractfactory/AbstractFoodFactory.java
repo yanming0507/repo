@@ -1,6 +1,6 @@
-package factory.abstractfactory.yanming.factory.abstractfactory;
+package factory.abstractfactory.gp017528.yanming.factory.abstractfactory;
 
-import factory.abstractfactory.yanming.factory.vo.IFood;
+import factory.abstractfactory.gp017528.yanming.factory.vo.IFood;
 
 /**
  * Created by Yan on 2019/3/8.
