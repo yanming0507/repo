@@ -16,7 +16,7 @@ public class AbstractFoodFactoryTest {
         AbstractFoodFactory factory2=new VegetablesFactory();
         IFood food2=factory2.createSweetFood();
         food2.create();
-        //当需要提供一中辣的食物时，这三个工厂都需要提供对应的方法实现
+        //当需要提供一种辣的食物时，这三个工厂都需要提供对应的方法实现
 
     }
 }
