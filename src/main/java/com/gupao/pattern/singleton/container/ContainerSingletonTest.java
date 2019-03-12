@@ -12,7 +12,7 @@ public class ContainerSingletonTest {
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newFixedThreadPool(12);
         Semaphore semaphore = new Semaphore(6);
-        CountDownLatch countDownLatch=new CountDownLatch(5);
+        CountDownLatch countDownLatch = new CountDownLatch(5);
         for (int i = 0; i < 10; i++) {
             try {
                 semaphore.acquire();
@@ -20,7 +20,7 @@ public class ContainerSingletonTest {
                     @Override
                     public void run() {
                         ContainerSingleton containerSingleton = (ContainerSingleton) ContainerSingleton.getObject("com.gupao.pattern.singleton.container.ContainerSingleton");
-                        System.out.println(Thread.currentThread().getName()+": "+containerSingleton);
+                        System.out.println(Thread.currentThread().getName() + ": " + containerSingleton);
                     }
                 });
                 countDownLatch.countDown();
