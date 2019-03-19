@@ -2,3 +2,7 @@
 可以使用合成聚合的方式把扩展类当做模板类的属性。
 扩展类抽取出一个公共的接口方法，每个扩展类都去实现该扩展方法
 如 com.gupao.pattern.template.mytemplate 下面的代码示例
+
+
+已经 修改自己的业务代码
+对应包为 com.gupao.pattern.template.mytemplate
