@@ -5,10 +5,10 @@ package com.gupao.pattern.template.mytemplate;
  */
 public class MyTemplateTest {
     public static void main(String[] args) {
-        Template template=new Template(new JavaCourse());
-        template.createCourse();
+        OpenThirdAndDaMai template=new OpenThirdAndDaMai(new Tencent());
+        template.open();
         System.out.println("====================");
-        template=new Template(new BigCourse());
-        template.createCourse();
+        template=new OpenThirdAndDaMai(new IQiYi());
+        template.open();
     }
 }
