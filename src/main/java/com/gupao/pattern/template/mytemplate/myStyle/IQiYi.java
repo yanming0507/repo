@@ -1,4 +1,4 @@
-package com.gupao.pattern.template.mytemplate;
+package com.gupao.pattern.template.mytemplate.myStyle;
 
 /**
  * Created by Yan on 2019/3/19.
