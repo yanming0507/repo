@@ -1,0 +1,55 @@
+GP017528  https://github.com/yanming0507/repo.git
+代码地址 com.gupao.pattern.....   包下面
+总结为 summary文件
+
+
+
+
+1、用一句自己的话总结学过的设计模式（要精准）。
+创建型模式：
+    单例模式
+        身份证id一样只有一份
+    工厂方法模式
+        生产单类产品
+    抽象工厂模式
+        生产产品族
+    原型模式
+        属性完整复制
+结构型模式：
+    装饰者模式
+        加一些装饰，本质依然不变
+    适配器模式----------自己以为是行为型
+        完美转换为自己需要
+    代理模式------------自己以为是行为型
+        功能加强，保护目标对象
+行为型模式：
+    观察者模式
+        敌不动我不动，敌动我动
+    策略模式
+        条条大路通罗马
+    委派模式
+        任务分发调度，物尽其用
+    模板方法模式-------自己以为是结构型
+        整体流程不可改变，部分关键步骤自己实现
+2、列举SpringAOP、IOC、DI应用的代码片段。
+
+<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSourceProxy"></property>
+    </bean>
+
+
+    <!-- 配置事务的传播特性 -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="save*" propagation="REQUIRED"/>
+            <tx:method name="add*" propagation="REQUIRED"/>
+            <tx:method name="insert*" propagation="REQUIRED"/>
+            <tx:method name="update*" propagation="REQUIRED"/>
+            <tx:method name="delete*" propagation="REQUIRED"/>
+            <tx:method name="*" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+    <aop:config>
+        <aop:pointcut id="allServiceMethod" expression="execution(* cn.com.hiveview.bdboardapi..service.*.*(..))"/>
+        <aop:advisor pointcut-ref="allServiceMethod" advice-ref="txAdvice"/>
+    </aop:config>
