@@ -1,0 +1,21 @@
+1、理解SpringIOC、DI、MVC的基本执行原理。
+
+2、自己手写一个Mini版本的SpringMVC。
+    1、定义web请求的开始web.xml文件制定dispatcherServlet
+        1、重写init方法
+            1、定位配置文件（加载web.xml的init参数）
+            2、加载配置文件，扫包（获取配置文件中的指定要扫的包名）
+            3、把所有包含注解的类注入的ioc容器中
+                进行保存（把controller名称和controller实例、service名称和service实例、requestMapping对应的url和方法）
+            4、完成依赖注入
+                1、获取ioc容器中包含autowired注解的属性
+                2、设置指定类的对应属性为ioc容器存储的对应的属性实例
+        2、重写doPost()和doGet方法（提供doDispatch()方法完成制定方法访问）
+            1、获取访问的url
+            2、替换多余的“/”为单一“/”
+            3、根据url在ioc容器中获取对应的方法
+            4、获取请求的参数
+            5、反射调用方法
+    2、定义各种所需要的注解
+    3、定义service、action
+    4、启动项目访问接口
