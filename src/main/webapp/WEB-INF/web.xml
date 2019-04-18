@@ -8,7 +8,7 @@ http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
     <display-name>Gupao Web Application</display-name>
     <servlet>
         <servlet-name>delegateServlet</servlet-name>
-        <servlet-class>com.gupao.spring.mini.myselfversion.servlet.v1.YanMingDispatcherServlet</servlet-class>
+        <servlet-class>com.gupao.spring.mini.myselfversion.servlet.v3.YanMingDispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>application.properties</param-value>

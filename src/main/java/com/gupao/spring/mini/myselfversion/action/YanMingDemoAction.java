@@ -19,7 +19,7 @@ public class YanMingDemoAction {
     @YanMingAutowired
     private YanMingIService yanMingIService;
     @YanMingRequestMapping("/query")
-    public void query(HttpServletRequest request , HttpServletResponse response,@YanMingParam String name)
+    public void query(HttpServletRequest request , HttpServletResponse response,@YanMingParam ("name")String name)
     {
         String result=yanMingIService.getName(name);
         try {

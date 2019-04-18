@@ -5,9 +5,9 @@ import java.lang.annotation.*;
 /**
  * Created by Yan on 2019/4/11.
  */
-@Documented
 @Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)
+@Documented
 public @interface YanMingParam {
     String value() default "";
 }
